@@ -14,17 +14,17 @@ const CheckProblem = ({ checkAnswer, reset }: CheckProblemProps) => {
         className="self-center cursor-pointer"
         onClick={() => {
             if (needsRestart) {
-                setSrc("/homeschool/question-mark.svg")
+                setSrc("/question-mark.svg")
                 reset()
                 setNeedsRestart(false)
             }
             else {
                 if (checkAnswer()) {
-                    setSrc("/homeschool/green-check.svg")
+                    setSrc("/green-check.svg")
                 }
                 else {
                     setNeedsRestart(true)
-                    setSrc("/homeschool/restart.svg")
+                    setSrc("/restart.svg")
                 }
             }
         }}

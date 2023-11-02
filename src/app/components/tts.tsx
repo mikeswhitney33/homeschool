@@ -9,7 +9,7 @@ type TTSParagraphProps = {
     src?: string | null
 }
 
-export default function TTSParagraph({ src = null, icon = "/homeschool/speaker.svg", children }: PropsWithChildren<TTSParagraphProps>) {
+export default function TTSParagraph({ src = null, icon = "/speaker.svg", children }: PropsWithChildren<TTSParagraphProps>) {
     const audioRef = useRef<HTMLAudioElement>(null)
     return <div className="grid grid-cols-[auto_1fr] gap-5 mb-5">
         {
