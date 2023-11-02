@@ -1,0 +1,258 @@
+{
+    "math": {
+        "units": [
+            {
+                "lessons": [
+                    {
+                        "name": "Place Value to the Hundreds",
+                        "available": false
+                    },
+                    {
+                        "name": "Identifying and Writing Numbers to 1,000",
+                        "available": false
+                    },
+                    {
+                        "name": "Skip Counting by 50s",
+                        "available": false
+                    },
+                    {
+                        "name": "Spelling 13, 14, and 15",
+                        "available": false
+                    },
+                    {
+                        "name": "Counting Bills",
+                        "available": false
+                    },
+                    {
+                        "name": "Doubles Addition to Sums of 18/Star Logic",
+                        "available": false
+                    },
+                    {
+                        "name": "Tally Marks/Working with Bills",
+                        "available": false
+                    },
+                    {
+                        "name": "Zero as a Placeholder/Adding 2 Two-digit Numbers",
+                        "available": false
+                    },
+                    {
+                        "name": "Subtraction Strategy #1.",
+                        "available": false
+                    },
+                    {
+                        "name": "Subtraction Strategy #2.",
+                        "available": false
+                    },
+                    {
+                        "name": "Counting by 25s",
+                        "available": false
+                    },
+                    {
+                        "name": "Time: Part 1.",
+                        "available": false
+                    },
+                    {
+                        "name": "Subtraction with Two-Digit Numbers.",
+                        "available": false
+                    },
+                    {
+                        "name": "Calendar Work: Part 1.",
+                        "available": false
+                    },
+                    {
+                        "name": "Calendar Work: Part 2.",
+                        "available": false
+                    },
+                    {
+                        "name": "Doubles Addition Plus 1",
+                        "available": false
+                    },
+                    {
+                        "name": "Time: Part 2.",
+                        "available": false
+                    },
+                    {
+                        "name": "Adding Two-Digit Numbers with Regrouping",
+                        "available": false
+                    },
+                    {
+                        "name": "Ordinal Positions 1 to 12.",
+                        "available": false
+                    },
+                    {
+                        "name": "Greater Than, Less Than, Equal.",
+                        "available": false
+                    },
+                    {
+                        "name": "Doubles in Subtraction",
+                        "available": false
+                    },
+                    {
+                        "name": "Creating Repeating Patterns and Color Patterns.",
+                        "available": false
+                    },
+                    {
+                        "name": "Counting Coins: Part 1.",
+                        "available": false
+                    },
+                    {
+                        "name": "Dividing Groups of Coins in Half",
+                        "available": false
+                    },
+                    {
+                        "name": "Time: Part 3.",
+                        "available": false
+                    },
+                    {
+                        "name": "Time: Review.",
+                        "available": false
+                    },
+                    {
+                        "name": "Time: Part 4",
+                        "available": false
+                    },
+                    {
+                        "name": "Calendar Work: Part 3",
+                        "available": false
+                    },
+                    {
+                        "name": "Counting Coins: Part 2",
+                        "available": false
+                    },
+                    {
+                        "name": "Rounding to the Nearest 10: Part 1.",
+                        "available": false
+                    },
+                    {
+                        "name": "Dozen, Half Dozen/One More and One Less.",
+                        "available": false
+                    },
+                    {
+                        "name": "Unit Assessment",
+                        "available": false
+                    },
+                    {
+                        "name": "Unit Assessment",
+                        "available": false
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "name": "Add and Subtract 10 and 100.",
+                        "available": true
+                    },
+                    {
+                        "name": "Expanded Form to the Hundreds",
+                        "available": false
+                    },
+                    {
+                        "name": "Inches, Feet, and Yards",
+                        "available": false
+                    },
+                    {
+                        "name": "Commutative Property/Checking Addition with Subtraction",
+                        "available": false
+                    },
+                    {
+                        "name": "Adding Numbers with Three or More Digits.",
+                        "available": false
+                    },
+                    {
+                        "name": "Time: Part 5",
+                        "available": false
+                    },
+                    {
+                        "name": "Adding Dollars and Cents",
+                        "available": false
+                    },
+                    {
+                        "name": "Time: Part 6",
+                        "available": false
+                    },
+                    {
+                        "name": "Time: Part 7",
+                        "available": false
+                    },
+                    {
+                        "name": "Fact Families",
+                        "available": false
+                    },
+                    {
+                        "name": "Spelling 16 to 19.",
+                        "available": false
+                    },
+                    {
+                        "name": "Measuring: Part 1",
+                        "available": false
+                    },
+                    {
+                        "name": "Measuring: Part 2",
+                        "available": false
+                    },
+                    {
+                        "name": "Time: Part 8",
+                        "available": false
+                    },
+                    {
+                        "name": "Subtraction with Money",
+                        "available": false
+                    },
+                    {
+                        "name": "Fractions: Part 1",
+                        "available": false
+                    },
+                    {
+                        "name": "Fractions: Part 2",
+                        "available": false
+                    },
+                    {
+                        "name": "Addition: Regrouping Ones and Tens",
+                        "available": false
+                    },
+                    {
+                        "name": "Associative Property and Adding 3 One-Digit Numbers",
+                        "available": false
+                    },
+                    {
+                        "name": "Counting Dollars and Coins",
+                        "available": false
+                    },
+                    {
+                        "name": "Time: Part 9",
+                        "available": false
+                    },
+                    {
+                        "name": "Measuring: Part 3",
+                        "available": false
+                    },
+                    {
+                        "name": "Time: Part 10",
+                        "available": false
+                    },
+                    {
+                        "name": "Rounding to the Nearest 10: Part 2",
+                        "available": false
+                    },
+                    {
+                        "name": "Thermometers",
+                        "available": false
+                    },
+                    {
+                        "name": "Time: Part 11",
+                        "available": false
+                    },
+                    {
+                        "name": "Unit Assessment",
+                        "available": false
+                    },
+                    {
+                        "name": "Unit Assessment",
+                        "available": false
+                    }
+                ]
+            }
+        ]
+    }
+}
