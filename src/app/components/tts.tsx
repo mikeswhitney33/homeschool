@@ -41,6 +41,8 @@ export default function TTSParagraph({ src = null, icon = "/speaker.svg", childr
                     <audio ref={audioRef}><source src={src} type="audio/wav" />NOT FOUND!</audio>
                 </div>
         }
-        <p>{children}</p>
+        <div>
+            {children}
+        </div>
     </div>
 }

@@ -149,7 +149,7 @@
                     },
                     {
                         "name": "Inches, Feet, and Yards",
-                        "available": false
+                        "available": true
                     },
                     {
                         "name": "Commutative Property/Checking Addition with Subtraction",
