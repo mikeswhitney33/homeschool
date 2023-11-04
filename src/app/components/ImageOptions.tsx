@@ -7,12 +7,15 @@ type ImageOptionsProps = {
     name: string
     options: string[]
     answer: string
+    onAnswer: (name: string, correct: boolean) => void
 } & ImageProps
 
-export default function ImageOptions({ name, options, answer, alt, ...props }: ImageOptionsProps) {
+export default function ImageOptions({ name, onAnswer, options, answer, alt, ...props }: ImageOptionsProps) {
     const [selected, setSelected] = useState<string>("")
     const checkAnswer = () => {
-        return selected.toLowerCase() === answer.toLowerCase()
+        const ret = selected.toLowerCase() === answer.toLowerCase()
+        onAnswer(name, ret)
+        return ret
     }
     const reset = () => {
         setSelected("");

@@ -2,14 +2,10 @@
 import TTSParagraph from "../tts"
 import ThreeDigitProblem from "../ThreeDigitProblem"
 import LessonSection from "../LessonSection"
+import { PageProps } from "../types"
 
 
-type PageProps = {
-    currentPage: number
-}
-
-
-export default function Page({ currentPage }: PageProps) {
+export default function Page({ currentPage, setLocked }: PageProps) {
     return <>
         <LessonSection pageNum={1} currentPage={currentPage} >
             <TTSParagraph src="/audio/lesson34.1.wav">

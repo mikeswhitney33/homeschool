@@ -7,7 +7,22 @@ import ImageQuestion from "../ImageQuestion"
 import ImageOptions from "../ImageOptions"
 
 
-export default function Page({ currentPage }: PageProps) {
+export default function Page({ currentPage, setLocked }: PageProps) {
+    const scores: { [key: string]: boolean[] } = {
+        "1": [false, false, false],
+        "2": [false, false, false, false, false, false]
+    }
+    const onAnswer = (name: string, correct: boolean) => {
+        const [section, index1] = name.split(".")
+        const index = parseInt(index1) - 1
+        scores[section][index] = correct
+        if (!scores[section].includes(false)) {
+            setLocked(false)
+        }
+        else {
+            setLocked(true)
+        }
+    }
     return <div>
         <LessonSection pageNum={1} currentPage={currentPage} >
             <TTSParagraph src="/audio/lesson36.1.wav">
@@ -31,18 +46,24 @@ export default function Page({ currentPage }: PageProps) {
                 </P>
             </TTSParagraph>
             <ImageQuestion
+                qName="1.1"
+                onAnswer={onAnswer}
                 className="object-cover object-left w-[144px] h-[48px]"
                 width={144}
                 height={48}
                 src="/nail.png"
                 answers={["1"]} alt="nail" />
             <ImageQuestion
+                qName="1.2"
+                onAnswer={onAnswer}
                 className="object-cover object-left w-[230px] h-[48px]"
                 width={216}
                 height={48}
                 src="/nail.png"
                 answers={["1.5", "1 1/2",]} alt="nail" />
             <ImageQuestion
+                qName="1.3"
+                onAnswer={onAnswer}
                 className="object-cover object-left w-[318px] h-[48px]"
                 width={288}
                 height={48}
@@ -78,16 +99,12 @@ export default function Page({ currentPage }: PageProps) {
             <TTSParagraph src="/audio/lesson36.3.wav">
                 Click on the unit of measurement that would make the most sense to use when measuring the length of each object shown.
             </TTSParagraph>
-            <ImageOptions answer={"inches"} name="bird" width={128} height={128} src="/images/36/lesson36.1.png" alt="bird" options={["Inches", "Feet"]} />
-            <ImageOptions answer={"feet"} name="house" width={128} height={128} src="/images/36/lesson36.2.png" alt="bird" options={["Inches", "Feet"]} />
-            <ImageOptions answer={"feet"} name="plane" width={128} height={128} src="/images/36/lesson36.3.png" alt="bird" options={["Inches", "Feet"]} />
-            <ImageOptions answer={"inches"} name="watermelon" width={128} height={128} src="/images/36/lesson36.4.png" alt="bird" options={["Inches", "Feet"]} />
-            <ImageOptions answer={"feet"} name="golf" width={128} height={128} src="/images/36/lesson36.5.png" alt="bird" options={["Inches", "Feet"]} />
-            <ImageOptions answer={"feet"} name="balloon" width={128} height={128} src="/images/36/lesson36.6.png" alt="bird" options={["Inches", "Feet"]} />
-
-
-
-
+            <ImageOptions onAnswer={onAnswer} answer={"inches"} name="2.1" width={128} height={128} src="/images/36/lesson36.1.png" alt="bird" options={["Inches", "Feet"]} />
+            <ImageOptions onAnswer={onAnswer} answer={"feet"} name="2.2" width={128} height={128} src="/images/36/lesson36.2.png" alt="bird" options={["Inches", "Feet"]} />
+            <ImageOptions onAnswer={onAnswer} answer={"feet"} name="2.3" width={128} height={128} src="/images/36/lesson36.3.png" alt="bird" options={["Inches", "Feet"]} />
+            <ImageOptions onAnswer={onAnswer} answer={"inches"} name="2.4" width={128} height={128} src="/images/36/lesson36.4.png" alt="bird" options={["Inches", "Feet"]} />
+            <ImageOptions onAnswer={onAnswer} answer={"feet"} name="2.5" width={128} height={128} src="/images/36/lesson36.5.png" alt="bird" options={["Inches", "Feet"]} />
+            <ImageOptions onAnswer={onAnswer} answer={"feet"} name="2.6" width={128} height={128} src="/images/36/lesson36.6.png" alt="bird" options={["Inches", "Feet"]} />
         </LessonSection>
     </div>
 }

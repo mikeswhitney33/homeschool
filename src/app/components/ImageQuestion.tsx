@@ -5,15 +5,19 @@ import { useRef } from "react"
 
 type ImageQuestionProps = {
     answers: string[]
+    qName: string
+    onAnswer: (name: string, correct: boolean) => void
 } & ImageProps
 
-export default function ImageQuestion({ answers, alt, className, ...props }: ImageQuestionProps) {
+export default function ImageQuestion({ qName, onAnswer, answers, alt, className, ...props }: ImageQuestionProps) {
     const input = useRef<HTMLInputElement>(null)
     function checkAnswer() {
+        let ret = false
         if (input.current !== null) {
-            return answers.includes(input.current.value)
+            ret = answers.includes(input.current.value)
         }
-        return false
+        onAnswer(qName, ret)
+        return ret
     }
     function reset() {
         if (input.current !== null) {
